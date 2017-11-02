@@ -1,26 +1,32 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './Pages/Home'
+import Bettermarriage from './Pages/Bettermarriage'
+import Bowlbrite from './Pages/Bowlbrite'
+import Chinpilla from './Pages/Chinpilla'
+import NeckMagic from "./Pages/NeckMagic";
+import PottyPutter from "./Pages/PottyPutter";
+import SaunaPants from "./Pages/SaunaPants";
+import Snuggie from "./Pages/Snuggie";
+import TurbieTwist from "./Pages/TurbieTwist";
+import WaxVac from "./Pages/WaxVac";
+import Checkout from './Pages/Checkout'
 
-import { graphql, gql, } from 'react-apollo'
 
-//copy in from graphql what that info is from the query. will need to create a const and assign as QUERY
-
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}
-
-export default graphql(QUERY)(App)
+export default () => (
+    <Router>
+        <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route path="/better-marriage" component={Bettermarriage}/>
+            <Route path="/bowl-brite" component={Bowlbrite}/>
+            <Route path="chinpilla" component={Chinpilla} />
+            <Route path="Checkout" component={NeckMagic} />
+            <Route path="Checkout" component={PottyPutter} />
+            <Route path="Checkout" component={SaunaPants} />
+            <Route path="Checkout" component={Snuggie} />
+            <Route path="Checkout" component={TurbieTwist} />
+            <Route path="Checkout" component={WaxVac} />
+            <Route path="checkout" component={Checkout} />
+        </Switch>
+    </Router>
+)
