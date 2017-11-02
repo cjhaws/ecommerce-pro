@@ -1,15 +1,17 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import Image from '../Images/sauna-pants2.png'
+import { Media } from 'reactstrap'
+import Nav from '../Components/Nav'
 
 export default () => {
     return (
         <div>
             <main>
                 <div>
-                    <div>
+                    <Nav/>
+                    <div id="body">
                         <div>
-                            <img src={Image} alt="Sauna Pants"/>
+                            <Media object src={Image} alt="Suana Pants" />
                         </div>
                         <div>
                             <p>The Better Marriage Blanket is the first and only blanket to keep your farts in the sheets. It will truly save your marriage from the catastrophe of after dinner flatulation. Every couple can benefit from such a great advance in technology.</p>
@@ -19,9 +21,6 @@ export default () => {
                 </div>
                 <div>
 
-                </div>
-                <div>
-                    <Link to="/">Back to home</Link>
                 </div>
             </main>
         </div>
