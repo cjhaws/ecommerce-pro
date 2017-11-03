@@ -16,16 +16,16 @@ export default () => (
     <Router>
         <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="better-marriage" component={BMB}/>
-            <Route path="bowl-brite" component={BowlB}/>
-            <Route path="chinpilla" component={Chinpilla}/>
-            <Route path="Checkout" component={NeckMagic}/>
-            <Route path="Checkout" component={PottyPutter}/>
-            <Route path="Checkout" component={SaunaPants}/>
-            <Route path="Checkout" component={Snuggie}/>
-            <Route path="Checkout" component={TurbieTwist}/>
-            <Route path="Checkout" component={WaxVac}/>
-            <Route path="checkout" component={Checkout}/>
+            <Route path="/better-marriage" component={BMB}/>
+            <Route path="/bowl-brite" component={BowlB}/>
+            <Route path="/chinpilla" component={Chinpilla}/>
+            <Route path="/neck-magic" component={NeckMagic}/>
+            <Route path="/potty-putter" component={PottyPutter}/>
+            <Route path="/sauna-pants" component={SaunaPants}/>
+            <Route path="/snuggie" component={Snuggie}/>
+            <Route path="/turbie-twist" component={TurbieTwist}/>
+            <Route path="/wax-vac" component={WaxVac}/>
+            <Route path="/checkout" component={Checkout}/>
         </Switch>
     </Router>
 );
