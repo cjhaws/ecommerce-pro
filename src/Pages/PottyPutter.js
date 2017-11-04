@@ -1,20 +1,35 @@
 import React from 'react'
-import Image from '../Images/potty-putter.jpg'
-import { Media } from 'reactstrap'
+import Img from '../Images/potty-putter.jpg'
+import { Button, Jumbotron} from 'reactstrap'
+import {Image} from 'react-bootstrap'
 import Nav from '../Components/Nav'
+
 
 export default () => {
     return (
-        <div>
+        <div id="product">
             <main>
                 <div>
                     <Nav/>
                     <div id="body">
-                        <div>
-                            <Media object src={Image} alt="Potty Putter" />
+                        <div id="image">
+                            <Image object src={Img} alt="Neck Magic" />
                         </div>
                         <div>
-                            <p>The Better Marriage Blanket is the first and only blanket to keep your farts in the sheets. It will truly save your marriage from the catastrophe of after dinner flatulation. Every couple can benefit from such a great advance in technology.</p>
+                            <Jumbotron>
+                                <p>
+                                    Do you like waisting a lot of time and being a useless member of society? Do you like escaping the existential crisis brought on by an fiery bowel movement? Do you like golf? If any of those prior statements apply to you this gimmicky toy is absolutely the right fit for you. The urine slash resistant mound will deflect any and all of the mistakes that will happen in the presence of this bathroom buddy. Out product will not disappoint.
+                                </p>
+                                <div>
+                                    Price:
+                                </div>
+                                <div>
+                                    $29.95
+                                </div>
+                                <Button color="primary">
+                                    Add to cart
+                                </Button>
+                            </Jumbotron>
                         </div>
                     </div>
 

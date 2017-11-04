@@ -1,20 +1,35 @@
 import React from 'react'
-import Image from '../Images/sauna-pants2.png'
-import { Media } from 'reactstrap'
+import Img from '../Images/sauna-pants2.png'
+import { Button, Jumbotron} from 'reactstrap'
+import {Image} from 'react-bootstrap'
 import Nav from '../Components/Nav'
+
 
 export default () => {
     return (
-        <div>
+        <div id="product">
             <main>
                 <div>
                     <Nav/>
                     <div id="body">
-                        <div>
-                            <Media object src={Image} alt="Suana Pants" />
+                        <div id="image">
+                            <Image object src={Img} alt="Neck Magic" />
                         </div>
                         <div>
-                            <p>The Better Marriage Blanket is the first and only blanket to keep your farts in the sheets. It will truly save your marriage from the catastrophe of after dinner flatulation. Every couple can benefit from such a great advance in technology.</p>
+                            <Jumbotron>
+                                <p>
+                                    Have you ever wanted to loose weight while also doing nothing but sitting down? If yes then keep reading because you absolutely must own this essential piece of modern living! You will love the results that you receive from our amazing weight loss system. Make others jealous of what you have between your muffin top and upper knee.
+                                </p>
+                                <div>
+                                    Price:
+                                </div>
+                                <div>
+                                    $39.95
+                                </div>
+                                <Button color="primary">
+                                    Add to cart
+                                </Button>
+                            </Jumbotron>
                         </div>
                     </div>
 

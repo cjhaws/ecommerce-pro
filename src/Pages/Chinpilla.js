@@ -1,20 +1,34 @@
 import React from 'react'
-import Image from '../Images/chinpilla.jpg'
-import { Media } from 'reactstrap'
+import Img from '../Images/chinpilla.jpg'
+import { Button, Jumbotron} from 'reactstrap'
 import Nav from '../Components/Nav'
+import {Image} from 'react-bootstrap'
 
 export default () => {
     return (
-        <div>
+        <div id="product">
             <main>
                 <div>
                     <Nav/>
                     <div id="body">
-                        <div>
-                            <Media object src={Image} alt="Chinpilla" />
+                        <div id="image">
+                            <Image object src={Img} alt="Bowl Brite" height="400px" responsive/>
                         </div>
                         <div>
-                            <p>The Better Marriage Blanket is the first and only blanket to keep your farts in the sheets. It will truly save your marriage from the catastrophe of after dinner flatulation. Every couple can benefit from such a great advance in technology.</p>
+                            <Jumbotron>
+                                <p>
+                                    The Chinpilla is an absolute must for any travel or even just passing out drunk on the couch. So its implied if you drink or travel you should invest in the chinpilla. You'll get your money back in the form of good nights sleep. We guarantee it.
+                                </p>
+                                <div>
+                                    Price:
+                                </div>
+                                <div>
+                                    $18.95
+                                </div>
+                                <Button color="primary">
+                                    Add to cart
+                                </Button>
+                            </Jumbotron>
                         </div>
                     </div>
 

@@ -1,20 +1,35 @@
 import React from 'react'
-import Image from '../Images/turbie-twist.jpg'
-import { Media } from 'reactstrap'
+import Img from '../Images/turbie-twist.jpg'
+import { Button, Jumbotron} from 'reactstrap'
+import {Image} from 'react-bootstrap'
 import Nav from '../Components/Nav'
+
 
 export default () => {
     return (
-        <div>
+        <div id="product">
             <main>
                 <div>
                     <Nav/>
                     <div id="body">
-                        <div>
-                            <Media object src={Image} alt="Turbie Twist" />
+                        <div id="image">
+                            <Image object src={Img} alt="Neck Magic" />
                         </div>
                         <div>
-                            <p>The Better Marriage Blanket is the first and only blanket to keep your farts in the sheets. It will truly save your marriage from the catastrophe of after dinner flatulation. Every couple can benefit from such a great advance in technology.</p>
+                            <Jumbotron>
+                                <p>
+                                    All i am is just a convenient product based on semi racist ideas. But this product will revolutionize your morning routine dont doubt that!
+                                </p>
+                                <div>
+                                    Price:
+                                </div>
+                                <div>
+                                    $14.95
+                                </div>
+                                <Button color="primary">
+                                    Add to cart
+                                </Button>
+                            </Jumbotron>
                         </div>
                     </div>
 

@@ -12,3 +12,9 @@ Image {
     height: 175px;
     width: 175px;
 }
+#product {
+    background-color: grey;
+}
+#image {
+    margin-bottom: 5%;
+}
