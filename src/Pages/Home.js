@@ -1,12 +1,13 @@
 import React from 'react'
 import Nav from '../Components/Nav'
+import MainArea from '../Components/MainArea'
 
 export default () => {
     return (
-        <div>
+        <div id="body">
             <Nav />
-            <div id="body">
-                <div>Hello you are home</div>
+            <div id="content">
+                <MainArea />
             </div>
         </div>
     )

@@ -1,7 +1,19 @@
-#body {
+#content {
     text-align: center;
     margin: auto;
     padding: 2%;
+}
+
+#body {
+    background-color: grey;
+}
+
+#image {
+    margin-bottom: 5%;
+}
+
+#card {
+    margin: 5%;
 }
 
 Link {
@@ -11,10 +23,4 @@ Link {
 Image {
     height: 175px;
     width: 175px;
-}
-#product {
-    background-color: grey;
-}
-#image {
-    margin-bottom: 5%;
 }

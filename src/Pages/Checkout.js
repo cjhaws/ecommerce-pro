@@ -4,9 +4,9 @@ import Nav from '../Components/Nav'
 
 export default () => {
     return (
-        <div>
+        <div id="body">
             <main>
-                <div>
+                <div id="content">
                     <Nav />
                     <div>Checkout Page</div>
                     <div>

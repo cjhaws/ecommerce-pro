@@ -6,11 +6,11 @@ import {Image} from 'react-bootstrap'
 
 export default () => {
     return (
-        <div id="product">
+        <div id="body">
             <main>
                 <div>
                     <Nav/>
-                    <div id="body">
+                    <div id="content">
                         <div id="image">
                             <Image object src={Img} alt="Bowl Brite" height="400px" responsive/>
                         </div>
